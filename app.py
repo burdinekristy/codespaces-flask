@@ -11,6 +11,3 @@ api.add_resource(RecipePublishResource, '/recipes/<int:recipe_id>/publish')
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
-@app.route("/")
-def hello_world():
-    return render_template("index.html", title="Hello")

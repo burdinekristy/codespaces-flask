@@ -32,7 +32,7 @@ class RecipeResource(Resource):
         data = request.get_json()
         recipe = next((recipe for recipe in recipe_list if recipe.id == recipe_id), None)
         if recipe is None:
-            return {'message': 'recipe not found'), HTTPStatus.NOT_FOUND 
+            return {'message': 'recipe not found'}, HTTPStatus.NOT_FOUND 
         recipe.name = data['name']
         recipe.description = data['description']
         recipe.num_of_servings = data['num_of_servings']
