@@ -9,5 +9,5 @@ api.add_resource(RecipeListResource, '/recipes')
 api.add_resource(RecipeResource, '/recipes/<int:recipe_id>')
 api.add_resource(RecipePublishResource, '/recipes/<int:recipe_id>/publish')
 
-if __name__ == '__main__':
+if __name__=='__main__':
     app.run(port=5000, debug=True)
